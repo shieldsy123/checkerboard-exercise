@@ -3,10 +3,6 @@ for (var i = 0; i < 90; i++){
   div.style.float = "left";
   div.style.width = "11.1%";
   div.style.height = "100px";
-  if ((i%2) == 0) {
-    div.style.background = "red";
-  } else {
-    div.style.background = "black";
-  }
+  div.style.background = '#'+(Math.random()*0xFFFFFF<<0).toString(16);
   document.body.appendChild(div);
 }
